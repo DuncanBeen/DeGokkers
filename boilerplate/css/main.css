@@ -110,7 +110,10 @@ header
 {
     font-size: 15px;
 }
-
+a
+{
+    text-decoration: none;
+}
 nav
 {
     margin: 0;
@@ -128,8 +131,7 @@ nav ul
 
 nav ul li
 {
-    border-style: solid;
-    border-width: 2px;
+
     text-decoration: none;
     list-style: none;
     padding-left: 100px;
@@ -141,8 +143,9 @@ nav ul li
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    background-color: blue;
-    height: 300px;
+    height: 500px;
+    background-image: url("../fotos/shoes.jpg");
+    margin: auto;
 }
 
 
