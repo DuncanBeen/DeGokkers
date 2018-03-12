@@ -96,8 +96,54 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body
+{
 
+}
+header
+{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+.logo
+{
+    font-size: 15px;
+}
 
+nav
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 2px;
+}
+nav ul
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li
+{
+    border-style: solid;
+    border-width: 2px;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 100px;
+}
+
+.banner
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    height: 300px;
+}
 
 
 
