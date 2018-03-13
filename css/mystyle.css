@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../font/SegoeUI-Semibold.woff2') format('woff2'),
+    url('../font/SegoeUI-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aller_lightregular';
+    src: url('../font/aller_lt-webfont.woff2') format('woff2'),
+         url('../font/aller_lt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family:"Aller";
+	src:url("../font/Aller_Rg.eot?") format("eot"),
+	url("../font/Aller_Rg.woff") format("woff"),
+	url("../font/Aller_Rg.ttf") format("truetype"),
+	url("../font/Aller_Rg.svg#Aller") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:"Aller Bold";
+	src:url("../font/Aller_Bd.eot?") format("eot"),
+	url("../font/Aller_Bd.woff") format("woff"),
+	url("../font/Aller_Bd.ttf") format("truetype"),
+	url("../font/Aller_Bd.svg#Aller-Bold") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:"Aller Light";
+	src:url("../font/Aller_Lt.eot?") format("eot"),
+	url("../font/Aller_Lt.woff") format("woff"),
+	url("../font/Aller_Lt.ttf") format("truetype"),
+	url("../font/Aller_Lt.svg#Aller-Light") format("svg");
+	font-weight:normal;font-style:normal;
+}
+
+@font-face {
+font-family:"Aller Italic";
+src:url("Aller_It.eot?") format("eot"),
+url("Aller_It.woff") format("woff"),
+url("Aller_It.ttf") format("truetype"),
+url("Aller_It.svg#Aller-Italic") format("svg");
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family: 'Oswald Medium';
+font-style: normal;
+font-weight: normal;
+src: local('../font/Oswald Medium'),
+url('../font/Oswald-Medium.woff') format('woff');
+}
+
+*{
+
+	padding: 0;
+	margin: 0;
+}
+
+/*****************Main*****************/
+body {
+	background-image: url('../img/backgrond.jpg');
+}
+.main {
+
+	display: grid;
+	grid-template-columns: 20% 1fr 20%;
+
+}
+
+.main a {
+
+	text-decoration: none;
+}
+
+/*****************Part-1-*****************/
+
+#id-part1{
+
+display: grid;
+
+grid-column: 1/4;
+
+padding: 20px 0;
+
+grid-template-columns: 13% 1fr 13%;
+
+background-color: #202020;
+
+opacity: 0.5;
+}
+
+.part1 {
+
+display:flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+grid-column: 2/3;
+}
+
+.part1 h1 {
+	
+font-family: 'aller_lightregular';
+	
+font-size: 45px;
+	
+color: #4bcaff;
+}
+
+/*****************Part-2-*****************/
+
+#id-part2{
+
+display: grid;
+
+grid-column: 1/4;
+
+grid-template-columns: 13% 1fr 13%;
+
+}
+
+.part2 {
+
+grid-column: 1/4;
+}
+
+.part2 img{
+	
+width: 100%;
+	
+height: 500px;
+	
+opacity: 0.7;
+}
+
+/*****************Part-3-*****************/
+
+#id-part3{
+
+display: grid;
+
+grid-column: 1/4;
+
+grid-template-columns: 13% 1fr 13%;
+
+padding: 25px 0;
+}
+
+.part3 {
+
+grid-column: 2/3;
+}
+
+.film{display:  flex;justify-content:  center;}
+
+.part3 h1 {
+	
+font-family: 'aller_lightregular';
+	
+font-size: 45px;
+	
+color: #4bcaff;
+	
+margin-bottom: 15px;
+	
+opacity:  0.7;
+}
+
+/*****************Part-4-*****************/
+
+#id-part4{
+
+display: grid;
+
+grid-column: 1/4;
+
+grid-template-columns: 13% 1fr 13%;
+
+background-color: #121212;
+
+opacity:  0.7;
+}
+
+.part4{
+	display: grid;
+	grid-column: 2/3;
+}
+
+.part4 h1 {
+	
+font-family: 'aller_lightregular';
+	
+font-size: 45px;
+	
+color: #4bcaff;
+	
+margin: 15px 0;
+}
+
+.row{
+
+	display: grid;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#expandedImg{
+
+width: 100%;
+
+height:  100%;
+}
+
+.gallery{
+	display: flex;
+}
+
+/*****************Part-5-*****************/
+
+#id-part5{
+
+display: grid;
+
+grid-column: 1/4;
+
+padding: 30px 0;
+
+grid-template-columns: 13% 1fr 13%;
+}
+
+.part5 {
+	display: flex;
+	justify-content:  space-around;
+	grid-column: 2/3;
+}
+
+.part5 h4{
+
+	font-family: 'aller_lightregular';
+	
+	font-size: 15px;
+	
+	color: #4bcaff;
+}
+
+.part5 h3{
+	
+font-family: 'aller_lightregular';
+	
+font-size: 15px;
+	
+color: #4bcaff;
+	
+border:  1px solid;
+	
+border-radius:  5px;
+	
+padding: 3px 7px;
+	
+margin-top: 25px;
+	
+display:  inline-block;
+}
+
+.part5 h5{
+
+font-family: 'aller_lightregular';
+
+font-size: 10px;
+
+margin-left: 5px;
+
+color: white;
+}
+
+.login{
+
+border: 2px solid white;
+
+border-radius:  5px;
+
+background:  black;
+
+opacity: 0.8;
+
+padding: 15px 15px;
+}
+
+.register{
+border: 2px solid white;
+
+border-radius:  5px;
+
+background:  black;
+
+opacity: 0.8;
+
+padding: 15px 15px;
+	
+}
+
+.algemeen{
+	display: flex;
+	margin-top: 10px;
+}
+
+/*****************Part-6-*****************/
+
+#id-part6{
+
+display: grid;
+
+padding: 15px 0;
+
+opacity: 0.7;
+
+grid-column: 1/4;
+
+grid-template-columns: 13% 1fr 13%;
+
+background-color: #131313;
+}
+
+
+.part6{
+
+grid-column: 2/3;
+
+display: flex;
+
+justify-content: space-between;
+}
+
+.deel1-part6, #border-part6{
+
+	display: flex;
+}
+
+#border-part6{
+
+	border-right: 1px solid #515f67;
+}
+
+.deel1-part6 p{
+	font-family: 'Segoe UI';
+	font-size: 9px;
+	color: #515f67;
+	padding: 0 7px;
+}
+
+.deel2-part6 p{
+	font-family: 'Segoe UI';
+	font-size: 9px;
+	color: #515f67;
+}
+
+
