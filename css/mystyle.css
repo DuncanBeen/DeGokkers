@@ -78,11 +78,6 @@ body {
 
 }
 
-.main a {
-
-	text-decoration: none;
-}
-
 /*****************Part-1-*****************/
 
 #id-part1{
@@ -91,13 +86,10 @@ display: grid;
 
 grid-column: 1/4;
 
-padding: 20px 0;
-
 grid-template-columns: 13% 1fr 13%;
 
 background-color: #202020;
 
-opacity: 0.5;
 }
 
 .part1 {
@@ -119,6 +111,130 @@ font-size: 45px;
 	
 color: #4bcaff;
 }
+
+.part1 h4{
+    color: #2d7176;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.part1 button {
+    background-color: #3585a7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.part1 button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #444444;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
 
 /*****************Part-2-*****************/
 
@@ -154,9 +270,9 @@ display: grid;
 
 grid-column: 1/4;
 
-grid-template-columns: 13% 1fr 13%;
+padding-bottom: 15px;
 
-padding: 25px 0;
+grid-template-columns: 13% 1fr 13%;
 }
 
 .part3 {
@@ -168,9 +284,9 @@ grid-column: 2/3;
 
 .part3 h1 {
 	
-font-family: 'aller_lightregular';
+font-family: Aller Light;
 	
-font-size: 45px;
+font-size: 40px;
 	
 color: #4bcaff;
 	
@@ -192,6 +308,8 @@ grid-template-columns: 13% 1fr 13%;
 background-color: #121212;
 
 opacity:  0.7;
+
+padding-bottom: 25px;
 }
 
 .part4{
@@ -201,9 +319,9 @@ opacity:  0.7;
 
 .part4 h1 {
 	
-font-family: 'aller_lightregular';
+font-family: Aller Light;
 	
-font-size: 45px;
+font-size: 40px;
 	
 color: #4bcaff;
 	
@@ -295,16 +413,18 @@ grid-template-columns: 13% 1fr 13%;
 
 .part5 h4{
 
-	font-family: 'aller_lightregular';
-	
-	font-size: 15px;
-	
-	color: #4bcaff;
+font-family: Aller Light;
+
+font-size: 15px;
+
+color: #4bcaff;
 }
 
-.part5 h3{
+.part5 a{
 	
-font-family: 'aller_lightregular';
+text-decoration: none;
+
+font-family: Aller Light;
 	
 font-size: 15px;
 	
@@ -323,44 +443,13 @@ display:  inline-block;
 
 .part5 h5{
 
-font-family: 'aller_lightregular';
+font-family: Aller Light;
 
 font-size: 10px;
 
 margin-left: 5px;
 
 color: white;
-}
-
-.login{
-
-border: 2px solid white;
-
-border-radius:  5px;
-
-background:  black;
-
-opacity: 0.8;
-
-padding: 15px 15px;
-}
-
-.register{
-border: 2px solid white;
-
-border-radius:  5px;
-
-background:  black;
-
-opacity: 0.8;
-
-padding: 15px 15px;
-	
-}
-
-.algemeen{
-	display: flex;
-	margin-top: 10px;
 }
 
 /*****************Part-6-*****************/
@@ -377,7 +466,7 @@ grid-column: 1/4;
 
 grid-template-columns: 13% 1fr 13%;
 
-background-color: #131313;
+background-color: #272727;
 }
 
 
@@ -400,7 +489,8 @@ justify-content: space-between;
 	border-right: 1px solid #515f67;
 }
 
-.deel1-part6 p{
+.deel1-part6 a{
+	text-decoration: none;
 	font-family: 'Segoe UI';
 	font-size: 9px;
 	color: #515f67;
